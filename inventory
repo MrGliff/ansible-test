@@ -1,2 +1,8 @@
+[web_server]
 ubuntu@34.199.140.166
+
+[file_server]
 ubuntu@52.202.103.216
+
+[db_server]
+ubuntu@3.222.36.141
