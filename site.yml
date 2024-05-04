@@ -3,6 +3,7 @@
   become: true
   pre_tasks:
       - name: Update Cache
+        tags: always
         apt:
             update_cache: yes
         when: ansible_distribution == 'Ubuntu'
@@ -17,6 +18,7 @@
   become: true
   tasks:
       - name: install apache2 & libapache2 package
+        tags: apache, apache2, ubuntu
         apt:
             name:
                 - apache2
@@ -27,6 +29,7 @@
   become: true
   tasks:
       - name: install mariadb package
+        tags: maria, mariadb, ubuntu
         apt:
             name: mariadb-server
             state: latest
@@ -35,6 +38,7 @@
   become: true
   tasks:
       - name: install samba package
+        tags: samba, ubuntu
         package:
             name: samba
             state: latest
