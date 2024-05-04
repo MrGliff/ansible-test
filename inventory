@@ -1,2 +1,5 @@
 [web_server]
 ubuntu@44.204.180.233
+
+[workstations]
+ubuntu@54.145.29.47
